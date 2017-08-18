@@ -4,9 +4,10 @@
     "description": "A express application with typescript",
     "main": "index.js",
     "scripts": {
-        "windev": "SET NODE_ENV=development && nodemon ./bin/www",
-        "dev": "NODE_ENV=development nodemon ./bin/www",
-        "grunt": "grunt",
+        "windev": "SET NODE_ENV=development && gulp serve",
+        "dev": "NODE_ENV=development gulp serve",
+        "serve": "gulp serve",
+        "gulp": "gulp",
         "start": "node ./bin/www"
     },
     "repository": {
@@ -38,9 +39,9 @@
         "@types/errorhandler": "0.0.30",
         "@types/method-override": "0.0.29",
         "@types/morgan": "^1.7.32",
-        "grunt": "^1.0.1",
-        "grunt-contrib-copy": "^1.0.0",
-        "grunt-ts": "^6.0.0-beta.16",
+        "gulp": "latest",
+        "gulp-nodemon": "^2.2.1",
+        "gulp-typescript": "latest",
         "nodemon": "^1.11.0",
         "typescript": "^2.4.2"
     }
